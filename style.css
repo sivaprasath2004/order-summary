@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display',sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--very-pale-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+}
+.container{
+height:auto;
+border: none;
+max-width: 450px; 
+background-color: white;
+border-radius: 20px;
+overflow: hidden;
+}
+h1{
+text-align: center;
+padding: 7px;
+color:black;
+}
+p{
+color:#8a8a8a;
+font-size:16px;
+text-align: center;
+}
+.box{
+    margin-left:10% ;
+    height: 80px;
+    width: 80%;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+
+}
+.boxleft{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.boxleft div{
+    margin-left:20px;
+}
+.boxleft div h2{
+font-weight: 900;
+font-size: 15px;
+color:hsl(223, 47%, 23%);
+}
+.boxleft div h3{
+    font-size: 14px;
+    color:#8a8a8a;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+.button a{
+    width:80%;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.button .first{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding:20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 15px 30px rgb(122, 122, 122);
+}
+.button .second{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 440px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .container {
+        width: 80%;
+    }
+}
